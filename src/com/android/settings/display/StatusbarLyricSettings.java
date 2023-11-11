@@ -20,7 +20,7 @@ import android.os.Bundle;
 
 import androidx.preference.Preference;
 
-import com.android.internal.logging.nano.MetricsProto;
+import android.app.settings.SettingsEnums;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -35,6 +35,6 @@ public class StatusbarLyricSettings extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.STATUS_BAR_LYRIC;
+        return SettingsEnums.STATUS_BAR_LYRIC;
     }
 }
